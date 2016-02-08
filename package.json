@@ -36,6 +36,7 @@
   "dependencies": {
     "bluebird": "^3.2.2",
     "columnize-array": "^0.1.0",
+    "globby": "^4.0.0",
     "liftoff": "^2.2.0",
     "lodash.merge": "^4.1.0",
     "minimist": "^1.2.0"
