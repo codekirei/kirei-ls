@@ -1,0 +1,14 @@
+- split results into types: file, dir, symlink, executable, all
+
+- handle env.configPath
+- read multiple dirs
+- flags
+  - colors on/off
+  - file size
+  - edit time
+  - headers on/off
+  - filters by type
+- combined depth search (eg test/**/* -x finds all executables in tree)
+- config
+  - sort fn?
+  - header fn?

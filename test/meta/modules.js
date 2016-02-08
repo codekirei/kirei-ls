@@ -5,8 +5,14 @@
 
 // npm
 //----------------------------------------------------------
-global.assert = require('chai').assert
-global.reqDir = require('require-directory')
+global.sinon = require('sinon')
+
+// chai
+const chai = require('chai')
+const chaiAsPromised = require('chai-as-promised')
+chai.use(chaiAsPromised)
+global.assert = chai.assert
 
 // local
 //----------------------------------------------------------
+global.kls = require('../..')

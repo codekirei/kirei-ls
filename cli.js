@@ -4,7 +4,7 @@
 
 const Liftoff = require('liftoff')
 const argv = require('minimist')(process.argv.slice(2))
-const Kls = require('./')
+const kls = require('.')
 
 new Liftoff(
   { name: 'kls'
@@ -17,5 +17,5 @@ new Liftoff(
 ).launch(
   { configPath: argv.config || argv.conf
   }
-  , env => new Kls(env, argv)
+  , env => kls(env, argv)
 )
