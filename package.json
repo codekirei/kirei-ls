@@ -4,7 +4,12 @@
   "description": "like ls, but prettier",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "cr": "npm run cover -s && npm run report -s",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha",
+    "md": "pm2 start pen",
+    "report": "istanbul report text",
+    "test": "mocha",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
   },
   "repository": {
     "type": "git",
@@ -19,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/codekirei/kirei-ls/issues"
   },
-  "homepage": "https://github.com/codekirei/kirei-ls#readme"
+  "homepage": "https://github.com/codekirei/kirei-ls#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "require-directory": "^2.1.1"
+  }
 }
