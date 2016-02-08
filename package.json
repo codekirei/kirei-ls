@@ -31,5 +31,9 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "require-directory": "^2.1.1"
+  },
+  "dependencies": {
+    "liftoff": "^2.2.0",
+    "minimist": "^1.2.0"
   }
 }
