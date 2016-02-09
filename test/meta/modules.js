@@ -5,6 +5,7 @@
 
 // npm
 //----------------------------------------------------------
+require('mocha-generators').install()
 global.sinon = require('sinon')
 
 // chai

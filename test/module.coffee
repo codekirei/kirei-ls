@@ -2,7 +2,9 @@
 
 describe 'module:', ->
 
-  it 'read dir', ->
-    actual = kls(undefined, _: ['test/meta/fixtures'])
-    expected = ['bar.txt', 'foo.txt']
-    assert.eventually.deepEqual actual, expected
+  it 'read dir', (done) ->
+    kls(undefined, _: ['test/meta/fixtures'])
+      .then (res) ->
+        assert.deepEqual res.files, ['file']
+        done()
+      .catch (err) -> done err

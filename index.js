@@ -2,27 +2,22 @@
 
 // import
 //----------------------------------------------------------
-const Promise = require('bluebird')
 const p = require('path')
 const columnize = require('columnize-array')
-const fs = require('fs')
 const merge = require('lodash.merge')
-const globby = require('globby')
+const co = require('co')
+const isexe = require('isexe')
+const freeze = require('deep-freeze')
+
+const globContents = require('./lib/globContents')
 
 // jsdoc
 function kls(env, flags) {
 
-  // read dir
-  //----------------------------------------------------------
   const cwd = process.cwd()
-  const glob = flags._[0].indexOf('*') >= 0
-    ? flags._[0]
-    : p.join(flags._[0], '*')
-  const path =
-    { rel: glob
-    , abs: p.join(cwd, glob)
-    }
-  return globby(path.abs)
+
+  // globContents(flags._[0], cwd).then(res => console.log(res))
+  return globContents(flags._[0], cwd)
 }
 
 // export

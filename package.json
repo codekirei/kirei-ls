@@ -35,8 +35,11 @@
   },
   "dependencies": {
     "bluebird": "^3.2.2",
+    "co": "^4.6.0",
     "columnize-array": "^0.1.0",
+    "deep-freeze": "0.0.1",
     "globby": "^4.0.0",
+    "isexe": "^1.1.1",
     "liftoff": "^2.2.0",
     "lodash.merge": "^4.1.0",
     "minimist": "^1.2.0"
