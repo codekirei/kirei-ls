@@ -1,20 +1,24 @@
 - remove CWD from content?
 - format output
-  - DRY parseContent (parseX -> types.map(type => parseAr(type)))
   - multiple globs
   - symlinks
   - flags
     x headings on/off (--no-headings)
-    - unformatted, single column output
+    x filters by type
+      x -f / --files
+      x -d / --dirs
+      x -s / --symlinks
+      x -e / --exes
+    - --no-format (no-columns, no-colors, no-symbols)
+    - --no-columns
     - colors on/off (--no-colors)
     - customizable colors
-    - symbols on/off (--no-symbols)
-    - customizable symbols
+    - appended symbols on/off (--no-symbols)
     - file size
     - edit time
-    - filters by type (only show files, etc)
 
 - fix bug when pointing up (e.g. '..')
+- change amount of res removed from CWD to CWD + pre-glob
 - confirm proper error handling in all co-wrapped generator fns
 - combined depth search (eg test/**/* -x finds all executables in tree)
 - write help text
@@ -29,4 +33,5 @@
 
 - maybe later
   - customizable headers
+  - customizable symbols (exe, dir)
   - customizable output sorting
