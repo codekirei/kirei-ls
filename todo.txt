@@ -1,11 +1,16 @@
+- format output
+  - multiple globs
+  - symlinks
+  - flags
+    - unformatted, single column output
+    - colors on/off
+    - symbols on/off
+    - file size
+    - edit time
+    - headers on/off
+    - filters by type (only show files, etc)
+
 - confirm proper error handling in all co-wrapped generator fns
-- flags
-  - unformatted, single column output
-  - colors on/off
-  - file size
-  - edit time
-  - headers on/off
-  - filters by type (only show files, etc)
 - combined depth search (eg test/**/* -x finds all executables in tree)
 - write help text
 - debug lib support
