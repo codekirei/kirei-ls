@@ -9,11 +9,12 @@
       x -d / --dirs
       x -s / --symlinks
       x -e / --exes
-    - --no-format (no-columns, no-colors, no-symbols)
+    x --no-colors
     - --no-columns
-    - colors on/off (--no-colors)
-    - customizable colors
+    - --no-types
     - appended symbols on/off (--no-symbols)
+    - --no-format (no-columns, no-colors, no-symbols, no-types)
+    - customizable colors
     - file size
     - edit time
 
