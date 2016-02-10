@@ -1,9 +1,10 @@
-- split results into types: file, dir, symlink, executable, all
+- write lib to format output based on flags/defaults
 - error handling
 - handle flags._.length === 0 (use cwd)
 - handle env.configPath
 - read multiple dirs
 - flags
+  - unformatted, single column output
   - colors on/off
   - file size
   - edit time

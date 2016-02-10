@@ -17,5 +17,10 @@ new Liftoff(
 ).launch(
   { configPath: argv.config || argv.conf
   }
-  , env => kls(env, argv)
+  , init
 )
+
+function init(env) {
+  console.log(env, argv)
+  kls(argv._)
+}

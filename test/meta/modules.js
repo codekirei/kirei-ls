@@ -3,6 +3,12 @@
 // require modules used in testing and add to global object
 // this file is injected by mocha.opts
 
+// node
+//----------------------------------------------------------
+global.cwd = process.cwd()
+const p = require('path')
+global.p = p
+
 // npm
 //----------------------------------------------------------
 require('mocha-generators').install()
@@ -17,3 +23,4 @@ global.assert = chai.assert
 // local
 //----------------------------------------------------------
 global.kls = require('../..')
+global.fixtures = p.join('test', 'meta', 'fixtures')
