@@ -4,7 +4,7 @@
 
 const Liftoff = require('liftoff')
 const argv = require('minimist')(process.argv.slice(2))
-const kls = require('.')
+const cli = require('./lib/cli')
 
 new Liftoff(
   { name: 'kls'
@@ -17,10 +17,5 @@ new Liftoff(
 ).launch(
   { configPath: argv.config || argv.conf
   }
-  , init
+  , env => cli(env.configPath, argv).then(console.log)
 )
-
-function init(env) {
-  console.log(env, argv)
-  kls(argv._)
-}

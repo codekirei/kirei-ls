@@ -1,16 +1,22 @@
-- write lib to format output based on flags/defaults
 - error handling
-- handle flags._.length === 0 (use cwd)
-- handle env.configPath
-- read multiple dirs
 - flags
   - unformatted, single column output
   - colors on/off
   - file size
   - edit time
   - headers on/off
-  - filters by type
+  - filters by type (only show files, etc)
 - combined depth search (eg test/**/* -x finds all executables in tree)
-- config
-  - sort fn?
-  - header fn?
+- write help text
+- debug lib support
+- update notifier support
+
+- readme
+- tests
+- docstrings
+- ci
+- npm
+
+- maybe later
+  - customizable headers
+  - customizable output sorting
