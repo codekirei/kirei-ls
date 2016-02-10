@@ -1,13 +1,16 @@
 - format output
+  - DRY parseContent (parseX -> types.map(type => parseAr(type)))
   - multiple globs
   - symlinks
   - flags
+    x headings on/off (--no-headings)
     - unformatted, single column output
-    - colors on/off
-    - symbols on/off
+    - colors on/off (--no-colors)
+    - customizable colors
+    - symbols on/off (--no-symbols)
+    - customizable symbols
     - file size
     - edit time
-    - headers on/off
     - filters by type (only show files, etc)
 
 - confirm proper error handling in all co-wrapped generator fns
