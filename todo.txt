@@ -10,7 +10,7 @@
       x -s / --symlinks
       x -e / --exes
     x --no-colors
-    - --no-columns
+    x --no-columns
     - --no-types
     - appended symbols on/off (--no-symbols)
     - --no-format (no-columns, no-colors, no-symbols, no-types)
