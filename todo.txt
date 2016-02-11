@@ -3,23 +3,29 @@
   - multiple globs
   - symlinks
   - flags
-    x headings on/off (--no-headings)
-    x filters by type
+    x -h, --help
+    x filters
       x -f / --files
       x -d / --dirs
       x -s / --symlinks
       x -e / --exes
-    x --no-colors
-    x --no-columns
-    - --no-types
-    - appended symbols on/off (--no-symbols)
-    - --no-format (no-columns, no-colors, no-symbols, no-types)
-    - customizable colors
-    - file size
-    - edit time
+    - sort
+      -s, --sort <age|ext|name|size>
+    - presentation
+      - -1, --no-columns
+      - -C, --no-color
+      - -D, --no-detail
+      - -G, --no-group
+      - -M, --no-multi
+      - -R, --no-relative
+      - -S, --no-symbols
+    - --no-headings -> remove
+
+- ini
+  - customizable colors
 
 - fix bug when pointing up (e.g. '..')
-- change amount of res removed from CWD to CWD + pre-glob
+- change amount of path removed from CWD to CWD + pre-glob
 - confirm proper error handling in all co-wrapped generator fns
 - combined depth search (eg test/**/* -x finds all executables in tree)
 - write help text
@@ -33,6 +39,7 @@
 - npm
 
 - maybe later
+  - I / initialize to create ini file with defaults or create copy if exists
   - customizable headers
   - customizable symbols (exe, dir)
   - customizable output sorting
