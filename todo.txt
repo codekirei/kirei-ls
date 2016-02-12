@@ -39,7 +39,7 @@
 - npm
 
 - maybe later
-  - I / initialize to create ini file with defaults or create copy if exists
+  - i / init flag to create ini file with defaults or create copy if exists
   - customizable headers
   - customizable symbols (exe, dir)
-  - customizable output sorting
+  - customizable sort algos
