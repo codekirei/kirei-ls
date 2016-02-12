@@ -20,6 +20,8 @@
       - -S, --no-symbols
     - --no-headings -> remove
 
+- handle colors/symbols for symlink targets
+- TODOs
 - ini
   - customizable colors
 
