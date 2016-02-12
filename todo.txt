@@ -1,24 +1,13 @@
-- format output
-  - multiple globs
-  - symlinks
-  - flags
-    x -h, --help
-    x filters
-      x -f / --files
-      x -d / --dirs
-      x -s / --symlinks
-      x -e / --exes
-    - sort
-      -s, --sort <age|ext|name|size>
-    - presentation
-      - -1, --no-columns
-      - -C, --no-color
-      - -D, --no-detail
-      - -G, --no-group
-      - -M, --no-multi
-      - -R, --no-relative
-      - -S, --no-symbols
-    - --no-headings -> remove
+- handle flags
+  - apply filters
+  - parse contents (-R)
+    - handle -R
+  x add symbols (-S)
+  - add color (-C)
+    - move type-specific logic into colorize fn
+  - combine types (-T)
+  - sort and add details (-s, -D)
+  - columnize (-1)
 
 - handle colors/symbols for symlink targets
 - TODOs
@@ -28,7 +17,7 @@
 - re-split out cli logic again for testing
 - confirm proper error handling in all co-wrapped generator fns
 - combined depth search (eg test/**/* -x finds all executables in tree)
-- write help text
+- finish help text
 - debug lib support
 - update notifier support
 
