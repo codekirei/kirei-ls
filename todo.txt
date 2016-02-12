@@ -1,4 +1,3 @@
-- remove CWD from content?
 - format output
   - multiple globs
   - symlinks
@@ -24,8 +23,6 @@
 - ini
   - customizable colors
 
-- fix bug when pointing up (e.g. '..')
-- change amount of path removed from CWD to CWD + pre-glob
 - confirm proper error handling in all co-wrapped generator fns
 - combined depth search (eg test/**/* -x finds all executables in tree)
 - write help text

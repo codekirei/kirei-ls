@@ -7,10 +7,9 @@ const globContents = require('./lib/globContents')
 
 // jsdoc
 function kls(paths) {
-  const cwd = process.cwd()
   return Promise.all(
     paths.map(
-      path => globContents(cwd, path)
+      path => globContents(path)
     )
   )
 }
