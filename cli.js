@@ -4,16 +4,15 @@
 
 // import
 //----------------------------------------------------------
-const EOL   = require('os').EOL
 const argv  = require('minimist')(process.argv.slice(2))
 const co    = require('co')
 const merge = require('lodash.merge')
 
 // local
-const Output   = require('./lib/output')
 const conf     = require('./lib/conf')
 const helpText = require('./lib/helpText')
 const kls      = require('.')
+const output   = require('./lib/output')
 
 // jsdoc
 function* cli(flags) {
@@ -26,7 +25,7 @@ function* cli(flags) {
 
   const _conf = merge({}, yield conf(), flags)
 
-  return new Output(contents, _conf).out.join(EOL)
+  return output(contents, _conf)
 }
 
 co(cli(argv))

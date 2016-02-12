@@ -23,6 +23,7 @@
 - ini
   - customizable colors
 
+- re-split out cli logic again for testing
 - confirm proper error handling in all co-wrapped generator fns
 - combined depth search (eg test/**/* -x finds all executables in tree)
 - write help text
