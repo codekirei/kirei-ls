@@ -20,6 +20,7 @@
 - finish help text
 - debug lib support
 - update notifier support
+- do profiling to see what takes the most time
 
 - readme
 - tests
