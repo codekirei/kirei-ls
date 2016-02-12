@@ -5,7 +5,7 @@
   x add symbols (-S)
   - add color (-C)
     - move type-specific logic into colorize fn
-  - combine types (-T)
+  x combine types (-T)
   - sort and add details (-s, -D)
   - columnize (-1)
 
